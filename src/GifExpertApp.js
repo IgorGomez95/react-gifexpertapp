@@ -3,8 +3,9 @@ import { AddCategory } from './components/AddCategory';
 import GifGrid from './components/GifGrid';
 
 // rafc snippet 
-const GifExpertApp = () => {
-    const [categories, setCategories] = useState(['Dragon Ball']);
+const GifExpertApp = ({ defaultCategories = [] }) => {
+    // const [categories, setCategories] = useState(['Dragon Ball']);
+    const [categories, setCategories] = useState(defaultCategories);
 
     // const handleAdd = () => {
     //     setCategories( [...categories, 'nueva categoría'] );
